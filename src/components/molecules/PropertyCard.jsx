@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ApperIcon from '@/components/ApperIcon';
 import Badge from '@/components/atoms/Badge';
+import NeighborhoodStats from '@/components/molecules/NeighborhoodStats';
 import { useFavorites } from '@/hooks/useFavorites';
-
 const PropertyCard = ({ property, viewMode = 'grid' }) => {
   const { addFavorite, removeFavorite, isFavorite } = useFavorites();
   const isPropertyFavorite = isFavorite(property.Id);
@@ -103,9 +103,15 @@ const PropertyCard = ({ property, viewMode = 'grid' }) => {
               </div>
             </div>
 
-            <p className="text-gray-600 text-sm line-clamp-2 mb-3">
+<p className="text-gray-600 text-sm line-clamp-2 mb-3">
               {property.description}
             </p>
+
+            {property.neighborhoodStats && (
+              <div className="mb-3">
+                <NeighborhoodStats stats={property.neighborhoodStats} />
+              </div>
+            )}
 
             <div className="flex items-center justify-between text-sm text-gray-500">
               <span>Listed {formatDate(property.listingDate)}</span>
@@ -178,16 +184,24 @@ const PropertyCard = ({ property, viewMode = 'grid' }) => {
                 <ApperIcon name="Square" className="w-4 h-4" />
                 {property.squareFeet?.toLocaleString()}
               </div>
-            </div>
+</div>
           </div>
           
-          <div className="flex items-center justify-between">
-            <Badge variant="primary" size="sm">
-              {property.propertyType}
-            </Badge>
-            <span className="text-xs text-gray-500">
-              Listed {formatDate(property.listingDate)}
-            </span>
+          {property.neighborhoodStats && (
+            <div className="px-4 pb-3">
+              <NeighborhoodStats stats={property.neighborhoodStats} />
+            </div>
+          )}
+          
+          <div className="px-4 pb-4">
+            <div className="flex items-center justify-between">
+              <Badge variant="primary" size="sm">
+                {property.propertyType}
+              </Badge>
+              <span className="text-xs text-gray-500">
+                Listed {formatDate(property.listingDate)}
+              </span>
+            </div>
           </div>
         </div>
       </Link>

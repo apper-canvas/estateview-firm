@@ -1,6 +1,6 @@
 [
   {
-    "Id": 1,
+"Id": 1,
     "title": "Modern Luxury Home with Mountain Views",
     "price": 850000,
     "address": "1234 Hillcrest Drive",
@@ -35,11 +35,16 @@
       "lat": 40.0150,
       "lng": -105.2705
     },
+    "neighborhoodStats": {
+      "schoolsRating": 9,
+      "crimeScore": 8,
+      "walkabilityScore": 7
+    },
     "listingDate": "2024-01-15T00:00:00Z",
     "status": "active"
   },
   {
-    "Id": 2,
+"Id": 2,
     "title": "Charming Victorian Townhouse",
     "price": 675000,
     "address": "567 Heritage Lane",
@@ -73,11 +78,16 @@
       "lat": 39.7392,
       "lng": -104.9903
     },
+    "neighborhoodStats": {
+      "schoolsRating": 8,
+      "crimeScore": 6,
+      "walkabilityScore": 9
+    },
     "listingDate": "2024-01-12T00:00:00Z",
     "status": "featured"
   },
   {
-    "Id": 3,
+"Id": 3,
     "title": "Contemporary Condo with City Views",
     "price": 425000,
     "address": "890 Urban Plaza",
@@ -111,11 +121,16 @@
       "lat": 39.7485,
       "lng": -104.9965
     },
+    "neighborhoodStats": {
+      "schoolsRating": 7,
+      "crimeScore": 7,
+      "walkabilityScore": 8
+    },
     "listingDate": "2024-01-18T00:00:00Z",
     "status": "active"
   },
   {
-    "Id": 4,
+"Id": 4,
     "title": "Spacious Family Home with Pool",
     "price": 725000,
     "address": "2468 Maple Street",
@@ -150,11 +165,16 @@
       "lat": 39.7294,
       "lng": -104.8319
     },
+    "neighborhoodStats": {
+      "schoolsRating": 9,
+      "crimeScore": 9,
+      "walkabilityScore": 6
+    },
     "listingDate": "2024-01-10T00:00:00Z",
     "status": "featured"
   },
   {
-    "Id": 5,
+"Id": 5,
     "title": "Cozy Mountain Cabin Retreat",
     "price": 495000,
     "address": "135 Pine Ridge Road",
@@ -188,11 +208,16 @@
       "lat": 39.7555,
       "lng": -105.2211
     },
+    "neighborhoodStats": {
+      "schoolsRating": 8,
+      "crimeScore": 9,
+      "walkabilityScore": 4
+    },
     "listingDate": "2024-01-08T00:00:00Z",
     "status": "active"
   },
   {
-    "Id": 6,
+"Id": 6,
     "title": "Luxury Penthouse with Panoramic Views",
     "price": 1250000,
     "address": "1000 Skyline Boulevard",
@@ -226,6 +251,11 @@
     "coordinates": {
       "lat": 39.7519,
       "lng": -104.9876
+    },
+    "neighborhoodStats": {
+      "schoolsRating": 6,
+      "crimeScore": 5,
+      "walkabilityScore": 9
     },
     "listingDate": "2024-01-20T00:00:00Z",
     "status": "featured"
